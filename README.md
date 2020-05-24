@@ -4,6 +4,7 @@ Detecting mask and helmet on people using computer vision technology [YOLO and T
 a. Helmet Mask
 b. Helmet No Mask!!
 c. No Helmet!! Mask
-d. No Helmet!! No Madk!!
+d. No Helmet!! No Mask!!
+### 
 for more details check on Notebook
 ### Download data from here[https://drive.google.com/file/d/1sZMkg0iQRd7z7LsvYRJPxxDlHH3o_hqW/view]
