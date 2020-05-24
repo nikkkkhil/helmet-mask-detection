@@ -19,9 +19,11 @@ For training with Yolo you need to download darknet model. Edit configuration fi
 # Result 
 First I tried with using Tensorflow object detection API. Tensorflow API failed to generalize well even after a day full of training even with augmented data. I passed xml file of no labeled images this might have caused bias while training. 
 ![img](https://i.imgur.com/mmBOSgx.png)
+
 Yolo generalizes very well only with few iterations of training. It is able to predict bounding box and classes very accurately and its inference and training speed is very fast. I did training for aroung 20k steps with few more steps and with less image
 ![yolo1](https://i.imgur.com/d9x0zYQ.png)
 ![yolo2](https://i.imgur.com/OabPoDv.png)
+
 As you can TF obj detection fails to located object  also class prediction are not accurate. Where as Yolo outperform tf API. Yolo is the fastest model available right now for object detection. 
 
 
