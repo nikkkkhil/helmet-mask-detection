@@ -1,7 +1,5 @@
 #!/usr/bin/env python
-# coding: utf-8
 
-# In[1]:
 
 
 import xml.etree.ElementTree as ET
@@ -10,40 +8,34 @@ from lxml import etree
 import pprint
 from xml.dom.minidom import parseString
 from tqdm import tqdm
+import os
 
 
-# In[2]:
 
 
-tree = ET.parse('/home/nikhil/Desktop/practice/helmet_detection/idata/annotations.xml')
+tree = ET.parse('annotations.xml') # path of xml file to be parsed
 
 
-# In[3]:
 
 
 root = tree.getroot()
 
 
-# In[4]:
 
 
-obj_cls = ['Helmet Mask','No Helmet!! Mask','Helmet No Mask!!','No Helmet!! No Mask!!']
+obj_cls = ['Helmet Mask','No Helmet!! Mask','Helmet No Mask!!','No Helmet!! No Mask!!'] # Name of classes change according to your need.
 
 
-# In[5]:
 
 
 store = {}
 
 
-# In[6]:
 
 
-import os
-os.getcwd()
 
 
-# In[7]:
+
 
 
 for x in tqdm(root.findall('image')):
@@ -125,7 +117,6 @@ for x in tqdm(root.findall('image')):
             store = {}
 
 
-# In[ ]:
 
 
 
