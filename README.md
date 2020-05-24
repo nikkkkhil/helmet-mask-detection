@@ -20,9 +20,13 @@ For training,data must be in  TFrecord format , edit the configuration file for 
 For training with Yolo you need to download darknet model. Edit configuration file for specifying no of classes  and cfg file path.for more details on training check notebook.
 
 # Result 
+# *Tensorflow object detection API*
+
 First I tried with using Tensorflow object detection API. Tensorflow API failed to generalize very well even after a day full of training  with augmented data. 
 
 ![img](https://i.imgur.com/mmBOSgx.png)
+
+# *YOLO*
 
 Yolo generalizes very well only with few iterations of training. It was able to predict bounding box and classes very accurately, its inference and training speeds are very fast. Training for aroung 20k weights suffecient enough for average performance. For better performance iterate to few more weights and do data augmentation. 
 
